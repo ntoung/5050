@@ -1,0 +1,41 @@
+{
+  "name": "5050",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./server/server.js",
+  "scripts": {
+    "start": "nodemon src/server/server.js",
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/ntoung/5050.git",
+  "author": "Nathan Toung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ntoung/5050/issues"
+  },
+  "homepage": "https://github.com/ntoung/5050#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "body-parser": "^1.17.2",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "express": "^4.15.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "fs": "^0.0.1-security",
+    "html-webpack-plugin": "^2.28.0",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7",
+    "rimraf": "^2.6.1",
+    "webpack": "^2.6.1",
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-hot-middleware": "^2.18.0"
+  },
+  "dependencies": {}
+}
